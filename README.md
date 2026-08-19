@@ -105,6 +105,14 @@ It stores the configured coordinates for each mode. The file is intentionally ig
 | Background execution | Threading |
 | Development assistance | Codex Sol |
 
+## Engineering documentation
+
+The repository includes additional documentation for reviewers who want to understand the implementation beyond the main README:
+
+- [**Architecture notes →**](docs/architecture.md) — state, threads, persistence, coordinate capture and automation loop.
+- [**Manual test plan →**](docs/testing.md) — Windows validation scenarios and regression checklist.
+- [**Development notes →**](docs/development.md) — iterative AI-assisted development workflow.
+
 ## AI-assisted development workflow
 
 Codex Sol was used as a development assistant while the behavior and final validation remained human-directed.
@@ -138,7 +146,9 @@ tiny-desktop-automation/
 ├── assets/
 │   └── banner.svg
 └── docs/
-    └── development.md
+    ├── architecture.md
+    ├── development.md
+    └── testing.md
 ```
 
 ## Screenshots
