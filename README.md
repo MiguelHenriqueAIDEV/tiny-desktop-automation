@@ -4,14 +4,25 @@
 
 <br>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white)
-![AI-Assisted Development](https://img.shields.io/badge/AI--Assisted_Development-8B5CF6?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Functional-22C55E?style=flat-square)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](#tech-stack)
+[![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white)](#run-on-windows)
+[![AI-Assisted Development](https://img.shields.io/badge/AI--Assisted_Development-8B5CF6?style=flat-square)](#ai-assisted-development-workflow)
+[![Status](https://img.shields.io/badge/Status-Functional-22C55E?style=flat-square)](#highlights)
+[![Python Check](https://github.com/MiguelHenriqueAIDEV/tiny-desktop-automation/actions/workflows/python-check.yml/badge.svg)](https://github.com/MiguelHenriqueAIDEV/tiny-desktop-automation/actions/workflows/python-check.yml)
 
-**A small Windows automation application that captures screen coordinates, stores local configuration and repeatedly executes configured mouse actions.**
+**A Windows automation application that captures screen coordinates, stores local configuration and repeatedly executes configured mouse actions.**
 
 </div>
+
+## Recruiter quick scan
+
+| | |
+|---|---|
+| **Problem** | Reduce repetitive desktop clicking with a configurable local tool. |
+| **Built with** | Python, Tkinter, PyAutoGUI, keyboard, JSON and threading. |
+| **Engineering proof** | Architecture notes, manual regression plan, GitHub Actions validation and Dependabot. |
+| **My workflow** | Define behavior → implement with AI assistance → test on Windows → debug → refine → validate. |
+| **Current status** | Functional and documented; real screenshots are the next portfolio improvement. |
 
 ## Why this project exists
 
@@ -29,6 +40,8 @@ It is also a practical example of **AI-assisted development**: behavior was defi
 - **Start / Stop controls** and keyboard hotkeys
 - **Background automation loop** using threading
 - **Configurable cycle delay** in source code
+- **GitHub Actions validation workflow** for repository checks
+- **Dependabot configuration** for dependency maintenance
 
 > This version does **not** record arbitrary mouse movement, full keyboard sequences or free-form macros. It replays the two configured click positions for the selected mode.
 
@@ -104,6 +117,8 @@ It stores the configured coordinates for each mode. The file is intentionally ig
 | Persistence | JSON |
 | Background execution | Threading |
 | Development assistance | Codex Sol |
+| Repository validation | GitHub Actions |
+| Dependency maintenance | Dependabot |
 
 ## Engineering documentation
 
@@ -143,6 +158,10 @@ tiny-desktop-automation/
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
+├── .github/
+│   ├── dependabot.yml
+│   └── workflows/
+│       └── python-check.yml
 ├── assets/
 │   └── banner.svg
 └── docs/
@@ -176,6 +195,6 @@ These are **planned ideas**, not current functionality:
 
 <div align="center">
 
-**Built with Python · Tested on Windows · Refined with AI assistance**
+**Built with Python · Tested on Windows · Documented for review · Refined with AI assistance**
 
 </div>
